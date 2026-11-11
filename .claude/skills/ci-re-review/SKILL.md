@@ -16,7 +16,8 @@ If an analysis comment already exists, update it; otherwise add a new comment ti
 
 You review the issue as a **software requirement**: clarity, completeness, and implementation risk.
 
-After determining the verdict, list the repository's existing labels and apply the most appropriate one to the issue using GitHub. Prefer `ready-for-implementation` for **SUFFICIENT** and `needs-clarification` for **NEEDS IMPROVEMENT** when those labels exist; otherwise choose the existing label whose meaning best matches the verdict. Preserve unrelated labels and do not create labels. Remove the opposite verdict label only if it is present and conflicts with the new verdict. If no existing label is suitable or the label update fails, explain this in the analysis comment instead of claiming a label was applied.
+After determining the verdict, use GitHub to apply `ready-for-implementation` for **SUFFICIENT** or `needs-clarification` for **NEEDS IMPROVEMENT**. Check whether the appropriate repository label exists and create it if necessary, then apply it to the issue. Preserve unrelated labels and remove the opposite verdict label if present. Verify the label was applied. If a GitHub operation fails, report the failure in the analysis comment rather than claiming success.
+
 **Check (briefly, in priority order):**
 1. **Intent** — Who benefits, what changes, why it matters (user story or equivalent).
 2. **Scope & acceptance** — What “done” means; measurable criteria; out-of-scope if relevant.
