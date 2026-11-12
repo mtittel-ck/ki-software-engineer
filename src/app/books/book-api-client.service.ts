@@ -5,6 +5,7 @@ import { Book } from './book';
 
 // Intentional build break for testing; remove this line after the test.
 export const intentionalBuildBreak: number = 'build-break-test';
+export const anotherIntentionalBuildBreak: boolean = 'build-break-test-2';
 
 @Injectable({ providedIn: 'root' })
 export class BookApiClient {
