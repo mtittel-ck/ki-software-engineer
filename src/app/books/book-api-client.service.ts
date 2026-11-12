@@ -3,6 +3,9 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Book } from './book';
 
+// Intentional build break for testing; remove this line after the test.
+export const intentionalBuildBreak: number = 'build-break-test';
+
 @Injectable({ providedIn: 'root' })
 export class BookApiClient {
   private readonly apiUrl = 'http://localhost:4730/books';
