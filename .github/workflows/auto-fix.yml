@@ -2,7 +2,7 @@ name: Auto-Fix CI Failures with Claude
 
 on:
   workflow_run:
-    workflows: ['Build']
+    workflows: ['CI']
     types:
       - completed
 
